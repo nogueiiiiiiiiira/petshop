@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body{
     display: flex;
     flex-direction: column;
@@ -19,6 +20,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 
 .header {
     width: 100%;
@@ -53,7 +55,7 @@ nav {
 }
 
 .nav-links ul li a {
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 30px;
