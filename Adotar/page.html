@@ -31,13 +31,49 @@
           <br>
           <h3>Escolha o seu futuro pet:</h3>
           
-          <select id="selectPrato" class="form-select" aria-label="Default select example">
+          <select id="selectAnimal" class="form-select" aria-label="Default select example" onchange="showSelects()">
               <option selected>Selecione um bichinho:</option>
-              <option> Gatos </option>
-              <option> Cachorros </option>
-              <option> Coelhos </option>
-            </select>   
+              <option value="gato"> Gato </option>
+              <option value="cachorro"> Cachorro </option>
+              <option value="coelho"> Coelho </option>
+            </select>
+            <br>
 
-      </div>
+            <select id="selectCat" class="form-select-cat form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um gato:</option>
+                <option> Bob </option>
+                <option> Stela </option>
+                <option> Scar </option>
+              </select>   
+        
+              <select id="selectDog" class="form-select-dog form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um cachorro:</option>
+                <option> Mikasa </option>
+                <option> Mel </option>
+                <option> Tim </option>
+              </select>   
+        
+              <select id="selectBunny" class="form-select-bunny form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um coelho:</option>
+                <option> Matt </option>
+                <option> Lila </option>
+                <option> Jude </option>
+              </select>
+
+              <br>
+              <button onclick="showAnimalInfo()" type="button" class="btn btn-outline-warning">Conferir informações</button>
+            </div>
+
+             <div class="conferir" id="Conferir" style="display: none;">
+                <p>Animal: <span id="tipo-animal"></span></p>
+                <p>Nome: <span id="nome-animal"></span></p>
+                <p>Idade: <span id="idade-animal"></span></p>
+                <p>Sexo: <span id="sexo-animal"></span></p>
+
+                <button onclick="adotar()" type="button" class="btn btn-outline-success">Adotar</button>
+            </div>
+
+
+
 </body>
 </html>

@@ -39,6 +39,13 @@ h1{
     gap: 1vh;
 }
 
-#selects-div {
+#selects-div,
+#Conferir {
     display: none;
-  }
+}
+
+.form-select-cat,
+.form-select-dog,
+.form-select-bunny{
+    display: none;
+}
