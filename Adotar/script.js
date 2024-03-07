@@ -65,7 +65,7 @@ function show(nome) {
         case "Scar":
             document.getElementById("tipo-animal").textContent = "Gato";
             document.getElementById("nome-animal").textContent = "Scar";
-            document.getElementById("idade-animal").textContent = "4 anos";
+            document.getElementById("idade-animal").textContent = "8 meses";
             document.getElementById("sexo-animal").textContent = "Macho";
             break;
     }
@@ -81,14 +81,14 @@ function show(nome) {
         case "Mikasa":
             document.getElementById("tipo-animal").textContent = "Cachorro";
             document.getElementById("nome-animal").textContent = "Mikasa";
-            document.getElementById("idade-animal").textContent = "1 ano";
+            document.getElementById("idade-animal").textContent = "3 anos";
             document.getElementById("sexo-animal").textContent = "Fêmea";
             break;
 
         case "Tim":
             document.getElementById("tipo-animal").textContent = "Cachorro";
             document.getElementById("nome-animal").textContent = "Tim";
-            document.getElementById("idade-animal").textContent = "3 anos";
+            document.getElementById("idade-animal").textContent = "1 ano";
             document.getElementById("sexo-animal").textContent = "Macho";
             break;
     }
@@ -97,7 +97,7 @@ function show(nome) {
         case "Matt":
             document.getElementById("tipo-animal").textContent = "Coelho";
             document.getElementById("nome-animal").textContent = "Matt";
-            document.getElementById("idade-animal").textContent = "1 ano";
+            document.getElementById("idade-animal").textContent = "9 meses";
             document.getElementById("sexo-animal").textContent = "Macho";
             break;
 
@@ -111,8 +111,8 @@ function show(nome) {
         case "Jude":
             document.getElementById("tipo-animal").textContent = "Coelho";
             document.getElementById("nome-animal").textContent = "Jude";
-            document.getElementById("idade-animal").textContent = "3 anos";
-            document.getElementById("sexo-animal").textContent = "Macho";
+            document.getElementById("idade-animal").textContent = "11 meses";
+            document.getElementById("sexo-animal").textContent = "Fêmea";
             break;
     }
 }
