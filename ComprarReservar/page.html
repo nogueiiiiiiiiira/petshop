@@ -44,49 +44,93 @@
             </select>
             <br>
 
-            <select id="selectRacaoAnimal" class="form-select-cat form-select" aria-label="Default select example" style="display: none;">
+            <select id="selectRacaoAnimal" class="form-select-racao-animal form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione o animal para quem essa opção está destinada:</option>
                 <option> Cachorro </option>
                 <option> Gato </option>
                 <option> Coelho </option>
               </select>   
         
-              <select id="selectRacaoGato" class="form-select-dog form-select" aria-label="Default select example" style="display: none;">
+              <select id="selectRacaoGato" class="form-select-racao-gato form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione uma ração para o seu gato:</option>
                 <option> Nutro R$80-140 </option>
                 <option> Iams R$100-160 </option>
                 <option> Orijen R$120-150 </option>
               </select>   
         
-              <select id="selectRacaoCoelho" class="form-select-bunny form-select" aria-label="Default select example" style="display: none;">
+              <select id="selectRacaoCoelho" class="form-select-racao-coelho form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione uma ração para o seu coelho:</option>
                 <option> Nutrópica R$90-120 </option>
                 <option> Funny Bunny R$70-100 </option>
                 <option> Versele-Laga R$70-150 </option>
               </select>
 
-              <select id="selectRacaoCachorro" class="form-select-bunny form-select" aria-label="Default select example" style="display: none;">
+              <select id="selectRacaoCachorro" class="form-select-racao-cachorro form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione uma ração para o seu cachorro:</option>
                 <option> Royal Canin R$100-180 </option>
                 <option> Hill's Science Diet R$200-600 </option>
                 <option> Purina Pro Plan R$190-580 </option>
               </select>
 
-              <br>
-              <button onclick="showAnimalInfo()" type="button" class="btn btn-outline-warning">Conferir informações</button>
+              <select id="selectBanhoTosa" class="form-select-banho-tosa form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um banho e tosa:</option>
+                <option> Animais pequenos R$50-90</option>
+                <option> Animais médios R$90-120 </option>
+                <option> Animais grandes R$120-200 </option>
+              </select>
+
+              <select id="selectBrinquedosCachorro" class="form-select-brinquedos-cachorro form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um brinquedo para o seu cachorro:</option>
+                <option>Brinquedo 01 R$22</option>
+                <option>Brinquedo 02 R$15</option>
+                <option>Brinquedo 03 R$12</option>
+            </select>
+            
+            <select id="selectBrinquedosGato" class="form-select-brinquedos-gato form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um brinquedo para o seu gato:</option>
+                <option>Brinquedo 01 R$20</option>
+                <option>Brinquedo 02 R$13</option>
+                <option>Brinquedo 03 R$10</option>
+            </select>
+            
+            <select id="selectBrinquedosCoelho" class="form-select-brinquedos-coelho form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um brinquedo para o seu coelho:</option>
+                <option>Brinquedo 01 R$13</option>
+                <option>Brinquedo 02 R$10</option>
+                <option>Brinquedo 03 R$19</option>
+            </select>
+            
+            <select id="selectAcessoriosCachorro" class="form-select-acessorios-cachorro form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um acessório para o seu cachorro:</option>
+                <option>Acessório 01 R$7</option>
+                <option>Acessório 02 R$12</option>
+                <option>Acessório 03 R$20</option>
+            </select>
+            
+            <select id="selectAcessoriosGato" class="form-select-acessorios-gato form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um acessório para o seu gato:</option>
+                <option>Acessório 01 R$20</option>
+                <option>Acessório 02 R$45</option>
+                <option>Acessório 03 R$30</option>
+            </select>
+            
+            <select id="selectAcessoriosCoelho" class="form-select-acessorios-coelho form-select" aria-label="Default select example" style="display: none;">
+                <option selected>Agora selecione um acessório para o seu coelho:</option>
+                <option>Acessório 01 R$35</option>
+                <option>Acessório 02 R$40</option>
+                <option>Acessório 03 R$15</option>
+            </select>
+            
+            <br>
+              <button onclick="showInfo()" type="button" class="btn btn-outline-warning">Conferir informações da compra/reserva</button>
             </div>
 
             <br>
 
               <div class="conferir" id="Conferir" style="display: none;">
-                <p>Animal: <span id="tipo-animal"></span></p>
-                <p>Nome: <span id="nome-animal"></span></p>
-                <p>Idade: <span id="idade-animal"></span></p>
-                <p>Sexo: <span id="sexo-animal"></span></p>
-                <button onclick="adotar()" type="button" class="btn btn-outline-success">Adotar</button>
+                <p>Ação Realizada: <span id="acao"></span></p>
+                <button onclick="confirmar()" type="button" class="btn btn-outline-success">Confirmar</button>
             </div>
-
-
 
 </body>
 </html>
