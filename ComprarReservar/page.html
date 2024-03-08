@@ -44,39 +44,39 @@
             </select>
             <br>
 
-            <select id="selectRacaoAnimal" class="form-select-racao-animal form-select" aria-label="Default select example" style="display: none;">
-                <option selected>Agora selecione o animal para quem essa opção está destinada:</option>
-                <option> Cachorro </option>
-                <option> Gato </option>
-                <option> Coelho </option>
-              </select>   
+            <select id="selectTipoAnimal" class="form-select-racao-animal form-select" aria-label="Default select example" style="display: none;" onchange="showAnimalOptions(this.value)">
+              <option selected>Agora selecione o animal para quem essa opção está destinada:</option>
+              <option id="cachorro"> Cachorro </option>
+              <option id="gato"> Gato </option>
+              <option id="coelho"> Coelho </option>
+          </select>
         
-              <select id="selectRacaoGato" class="form-select-racao-gato form-select" aria-label="Default select example" style="display: none;">
+              <select id="selectRacaoGato" class="form-select-racao form-select-animal" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione uma ração para o seu gato:</option>
-                <option> Nutro R$80-140 </option>
-                <option> Iams R$100-160 </option>
-                <option> Orijen R$120-150 </option>
-              </select>   
+                <option> Nutro R$140 </option>
+                <option> Iams R$160 </option>
+                <option> Orijen R$150 </option>
+            </select> 
         
               <select id="selectRacaoCoelho" class="form-select-racao-coelho form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione uma ração para o seu coelho:</option>
-                <option> Nutrópica R$90-120 </option>
-                <option> Funny Bunny R$70-100 </option>
-                <option> Versele-Laga R$70-150 </option>
+                <option> Nutrópica R$120 </option>
+                <option> Funny Bunny R$100 </option>
+                <option> Versele-Laga R$150 </option>
               </select>
 
               <select id="selectRacaoCachorro" class="form-select-racao-cachorro form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione uma ração para o seu cachorro:</option>
-                <option> Royal Canin R$100-180 </option>
-                <option> Hill's Science Diet R$200-600 </option>
-                <option> Purina Pro Plan R$190-580 </option>
+                <option> Royal Canin R$180 </option>
+                <option> Hill's Science Diet R$200 </option>
+                <option> Purina Pro Plan R$190</option>
               </select>
 
               <select id="selectBanhoTosa" class="form-select-banho-tosa form-select" aria-label="Default select example" style="display: none;">
                 <option selected>Agora selecione um banho e tosa:</option>
-                <option> Animais pequenos R$50-90</option>
-                <option> Animais médios R$90-120 </option>
-                <option> Animais grandes R$120-200 </option>
+                <option> Animais pequenos R$90</option>
+                <option> Animais médios R$120 </option>
+                <option> Animais grandes R$180 </option>
               </select>
 
               <select id="selectBrinquedosCachorro" class="form-select-brinquedos-cachorro form-select" aria-label="Default select example" style="display: none;">

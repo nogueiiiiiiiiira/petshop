@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    padding-top: 4vh;
+    padding-bottom:4vh;
+}
+
+h1{
+    justify-content: center;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    width: 50vh;
+    background-color: black;
+    border-radius: 10vh;
+}
+
+.transform{
+    transition: ease-in-out;
+}
+
+.transform:hover{
+    transform: scale(1.1);  
+}
+
+.btn-group{
+    gap: 1vh;
+}
+
+#selects-div,
+#Conferir {
+    display: none;
+}
+
+.form-select-cat,
+.form-select-dog,
+.form-select-bunny{
+    display: none;
+}
+
+.conferir{
+    border: 1px solid black;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    padding: 5vh;
+}
